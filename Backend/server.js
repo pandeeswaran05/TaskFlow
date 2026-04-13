@@ -29,7 +29,7 @@ app.use(express.static("dist"));
 
 // ✅ Middleware
 app.use(cors({
-  origin: ['http://localhost:5173'],
+  origin: ['https://login-5x1l.onrender.com'],
   credentials: true,
 }));
 
