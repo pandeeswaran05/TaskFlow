@@ -3,7 +3,7 @@ import { useAuth } from '../../Context/Authcontext';
 import { useToast } from '../../Context/ToastContext';
 import { ini } from '../../utils/Helper';
 
-const Navbar = ({ onEnrollStudent, onOpenProfile, onOpenSettings }) => {
+const Navbar = ({onOpenProfile, onOpenSettings }) => {
   const { user, logout } = useAuth();
   const { authToast } = useToast();
   const [menuOpen, setMenuOpen] = useState(false);
@@ -67,9 +67,7 @@ const Navbar = ({ onEnrollStudent, onOpenProfile, onOpenSettings }) => {
                 <div className="um-name">{user.name}</div>
                 <div className="um-email">{user.email}</div>
               </div>
-               <button className="header-btn" onClick={onEnrollStudent}>
-                + ADD TASK
-              </button>
+               
               <div className="um-item" onClick={handleProfile}>
                 <span
                   className="um-icon"
