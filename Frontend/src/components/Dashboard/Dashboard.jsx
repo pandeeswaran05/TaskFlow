@@ -145,12 +145,16 @@ const Dashboard = () => {
   return (
     <>
       <Header
-        onEnrollStudent={() => handleOpenModal()} // you can rename this prop later
         onOpenProfile={() => setProfileOpen(true)}
         onOpenSettings={() => setSettingsOpen(true)}
       />
 
       <div className="container">
+        <div className="container-header">
+          <button className="add-task-btn-top" onClick={() => handleOpenModal()}>
+            + Add Task
+          </button>
+        </div>
         <StatsRow tasks={statsTasks} />
 
         <Toolbar
