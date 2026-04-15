@@ -191,6 +191,31 @@ header,
   margin: 0 auto;
   padding: 24px 20px;
 }
+/* ── DASHBOARD TOP ── */
+.container-header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+.add-task-btn-top {
+  background: #1D9E75;
+  color: white;
+  border: none;
+  border-radius: 9px;
+  padding: 10px 18px;
+  font-size: 13px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+.add-task-btn-top:hover {
+  background: #158a63;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(29, 158, 117, 0.3);
+}
+
 
 /* ── STATS ── */
 .stats-row {
